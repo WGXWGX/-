@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>document</title>
+	<meta charset="UTF-8">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body,html{
+			width: 100%;
+		}
+		h3{
+			height: 100px;
+			background: #ccc;
+			width: 960px;
+			margin: 30px auto;
+			line-height: 100px;
+			text-align: center;
+		}
+		article{
+			width: 960px;
+			margin: 30px auto;
+		}
+		#left, #right{
+			display: table;
+			height: 200px;
+		}
+		#left{
+			background: #00ff00;
+			float: left;
+			width: 630px;
+		}
+		#right{
+			background: #0000ff;
+			float: right;
+			width: 300px;
+		}
+		#left p, #right p{
+			word-break: break-all; 
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+		footer{
+			clear: both;
+		}
+		#banner{
+			width: 960px;
+			height: 480px;
+			margin: 30px auto;
+			background: url(1.jpg) no-repeat center;
+			/*-webkit-background-size: cover;*/
+			background-size: cover;
+			/*width: 100%;*/
+		}
+		@media  screen and (max-width:959px){
+			h3{
+				width: 100%;
+			}
+			#left{
+				width: 63%;
+			}
+			#right{
+				width: 30%;
+			}
+			article{
+				width: 100%;
+			}
+			#banner{
+				width: 100%;
+				height: 0;
+				padding-top: 50%;
+			}
+		}
+		@media  screen and (max-width:479px){
+			h3{
+				width: 100%;
+			}
+			#left{
+				width: 100%;
+			}
+			#right{
+				width: 100%;
+			}
+			article{
+				width: 100%;
+			}
+			#banner{
+				width: 100%;
+				height: 0;
+				padding-top: 50%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h3>首页</h3>
+	</header>
+	<nav>
+		<h3>导航</h3>
+	</nav>
+	<div id="banner"></div>
+	<article>
+		<div id="left">
+			<p>jkkhkhkjhhkfhgnvkdfghryfhbkjsnfkbkxfhlhknbkjfhldknfbnknknfjdnjhhkfhgnvkdfghryfhbkjsnfkbkxfhlhknbkjfhldknfbnknknfjdjhhkfhgnvkdfghryfhbkjsnfkbkxfhlhknbkjfhldknfbnknknjhhkfhgnvkdfghryfhbkjsnfkbkxfhlhknbkjfhldknfbnknknfjdfjd</p>
+		</div>
+		<div id="right">
+			<p>fhirirhifhnvknsfdlsajriweiorutwioreuwiuwiekgfjhhkfhgnvkdfghryfhbkjsnfkbkxfhlhknbkjfhldknfbnknknfjdnnkjnfjghnfgs</p>
+		</div>
+		
+	</article>
+	
+	<footer>
+		<h3>尾部</h3>
+	</footer>
+</body>
+</html>
